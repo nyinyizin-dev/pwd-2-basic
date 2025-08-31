@@ -2,39 +2,37 @@
 <html lang="en">
 <head>
     <title>Basic</title>
-    <style>
-        .box1 {
-            position: relative;
-            margin: 40px auto;
-            width: 1000px;
-            height: 500px;
-            background: silver;
-        }
-        .box2 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: 100px;
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(45deg, teal, purple);
-            transition: scale 0.5s;
-            animation: move 3s infinite alternate;
-            
-        }
-        .box2:hover {
-            scale: 1.1;
-        }
-        @keyframes move {
-            0% { top: 0; left: 0; }
-            50% { top: 400px; left: 450px; }
-            100% { top: 0; left: 900px; }
-        }
-    </style>
+   
 </head>
 <body>
-    <div class="box1">
-        <div class="box2"></div>
-    </div>
+  
+    <h2>hello js</h2>
+
+    <script>
+        let bob = {
+            name: "Bob",
+            hello: function() {
+                return `Hello ${this.name}`;
+            }
+        };
+
+        class Animal {
+            constructor(name) {
+                this.name = name;
+            }
+
+            hello() {
+                return `Hello ${this.name}`;
+            }
+        }
+
+        class Dog extends Animal {
+            run() {
+                return `${this.name} is running...`;
+            }
+        }
+
+        let dog = new Dog("Lucy");
+    </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: teal;">
+    <script>
+      const users = [
+        { username: "John", age: 25 },
+        { username: "Alice", age: 30 },
+        { username: "Bob", age: 28 },
+        { username: "Emma", age: 24 },
+        { username: "Michael", age: 35 },
+        { username: "Sarah", age: 27 },
+        { username: "David", age: 32 },
+        { username: "Lisa", age: 29 },
+        { username: "Tom", age: 31 },
+        { username: "Emily", age: 26 },
+        { username: "James", age: 33 },
+        { username: "Sofia", age: 28 },
+      ];
+      let u25 = users.filter((u) => u.age <= 30);
+      let u25Name = users.filter((u) => u.age <= 30).map(u => u.username).sort();
+      console.log(u25);
+      console.log(u25Name);
+    </script>
+  </body>
+</html>
